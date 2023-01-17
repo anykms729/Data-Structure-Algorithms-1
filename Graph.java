@@ -4,11 +4,6 @@ import java.util.Queue;
 
 public class Graph {
 
-    // Graph = Non-linear aggregation of Nodes & Edges
-    // Two types of Graphs = undirected graph(ex: Facebook) & directed graph (ex: travel app)
-    // Directed Graph: Represented as Adjacency Matrix (2D Array to store 1's/0's to represent edges) or Adjacency List (by LinkedList)
-
-    // Adjacency Matrix for Directed Graph: Run Time Complexity O(1) just to find two indices to find row and columns & Space Complexity (V^2) to store "V" number of vertices or node
     ArrayList<Node_Graph> nodes;
     int[][] matrix;
 
@@ -98,14 +93,6 @@ public class Graph {
         }
     }
 
-    // DFS = Search Algorithm for traversing a tree or graph data structure
-    // 1) Pick a route
-    // 2) Keep going till reach a dead end, or a previously visited node
-    // 3) Backtrack to Last node that has unvisited adjacent neighbors
-    // 4) Stack data structure is utilized (FILO)
-    // 5) Child is visited first rather than Sibling
-    // 6) Better if the destination node on average is close
-
     public void depthFirstSearch(int src){
         boolean[] visited = new boolean[matrix.length];
         depthFirstSearchLogic(src, visited);
@@ -133,12 +120,7 @@ public class Graph {
         return;
     }
 
-    // BFS = Search Algorithm for traversing a tree or graph data structure
-    // 1) It's done one "Level" at a time rather than one "Branch" at a time.
-    // 2) Queue data structure is utilized.
-    // 3) Sibling is visited first rather than child
-    // 4) Better if the destination node on average is close
-
+  
     public void breadthFirstSearch(int src){
         // Queue Interface is implemented by LinkedList and PriorityQueue class
         Queue<Integer> queue = new LinkedList<>();
