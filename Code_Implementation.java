@@ -1,6 +1,10 @@
 public class Code_Implementation {
     public static void main(String[] args) {
+        // Create object to call each function defined in the class itself
         Code_Implementation code_implementation = new Code_Implementation();
+        
+        code_implementation.graph_Matrix();
+        code_implementation.graph_LinkedList();
         code_implementation.binary_Search_Tree();
     }
 
