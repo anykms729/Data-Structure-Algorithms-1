@@ -1,14 +1,4 @@
-// 1) Tree Data Structure: Non-linear Data Structure
-// 2) Root or Parent (No incoming Edge) → Branch (Incoming & outgoing edge) → Leaf (No outgoing edge)
-// 3) Sub tree: Smaller Tree held within a Larger Tree
-// 4) Size: # of nodes
-// 5) Depth: # of edges below the root node
-// 6) Height: # of edges above furthest leaf node
-// 7) Binary search Tree: Has more than 2 child nodes and
-// 8) Binary Tree vs Binary Search Tree: A Binary Tree is a non-linear data structure in which a node can have 0, 1 or 2 nodes. Individually, each node consists of a left pointer, right pointer and data element. A Binary Search Tree is an organized binary tree with a structured organization of nodes.
-// 9) Benefit: Easy to locate a node when they're in the order
-// 10) Time complexity: Best case O(log n) in case the tree is well-balanced & Worst case O(n)
-// 11) Space complexity: Best case O(n)
+
 public class Binary_Search_Tree {
 
     Node_Tree root;
